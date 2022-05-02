@@ -56,23 +56,23 @@ window.addEventListener('load', () => {
 });
 
 
-// function setIcons(icon, iconID){
-//     const skycons = new Skycons({color: "white"});
-//     const currentIcon = (icon) => {
-//         switch(icon){
-//             case '01d'      : return 'CLEAR_DAY';
-//             case '01n'      : return 'CLEAR_NIGHT';
-//             case '02d'      : return 'PARTLY_CLOUDY_DAY';
-//             case '02n'      : return 'PARTLY_CLOUDY_NIGHT';
-//             case '03n || 03d || 04d || 04n'      : return 'CLOUDY';
-//             case '10d || 10n || 09d || 09n'      : return 'RAIN';
-//             case '11d || 11n'      : return 'SLEET';
-//             case '13d || 13n'      : return 'SNOW';
-//             case '50d || 50n'      : return 'WIND';
-//             case '50d || 50n'      : return 'FOG';
-//             default        : return 1;
-//         }
-//     };  
-//     skycons.play();
-//     return skycons.set(iconID, Skyecons[currentIcon]);
-// }
+const setIcons = (icon, iconID) => {
+    const skycons = new Skycons({color: "white"});
+    const currentIcon = (icon) => {
+        switch(icon){
+            case 'clear sky'      : return 'CLEAR_DAY';
+            // case '01n'      : return 'CLEAR_NIGHT';
+            // case '02d'      : return 'PARTLY_CLOUDY_DAY';
+            // case '02n'      : return 'PARTLY_CLOUDY_NIGHT';
+            // case '03n || 03d || 04d || 04n'      : return 'CLOUDY';
+            // case '10d || 10n || 09d || 09n'      : return 'RAIN';
+            // case '11d || 11n'      : return 'SLEET';
+            // case '13d || 13n'      : return 'SNOW';
+            // case '50d || 50n'      : return 'WIND';
+            // case '50d || 50n'      : return 'FOG';
+            default        : return 1;
+        }
+    };  
+    skycons.play();
+    return skycons.set(iconID, Skyecons[currentIcon]);
+};
