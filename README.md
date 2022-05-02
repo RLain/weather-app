@@ -6,5 +6,5 @@
 
 *OpenSource* Weather API: https://openweathermap.org/current
 
-*Icon Images*: https://darkskyapp.github.io/skycons/
+*Icon Images*: https://github.com/erikflowers/weather-icons.git
 
