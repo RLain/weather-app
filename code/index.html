@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <meta charset="UTF-8"/>
 <link rel="stylesheet" href="./style.css"/>
+<link href="https://github.com/erikflowers/weather-icons.git" rel="stylesheet" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css" rel="stylesheet" />
 <body>
   <div class="location">
       <h1 class="location-timezone">Timezone</h1>
+      <h1 class="icon-description"></h1>
       <canvas class="icon" width="128" height="128"></canvas>
+      <p class="weather-icon"></p>
   </div>
   <div class="temperature">
       <div class="degree-section">
@@ -14,6 +18,7 @@
       <div class="temperature-description">It's real fresh</div>
 
   </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="app.js"></script>
     <script src="skycons.js"></script>
 </body>
