@@ -1,4 +1,4 @@
-# weather-app
+# 🌦 weather-app
 ### 2022 Fun Project: Building a Weather App
 *Built*: April 2022
 
