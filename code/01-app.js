@@ -5,7 +5,6 @@
 window.addEventListener('load', () => {
   let long;
   let lat;
-  let timezone;
   let temperatureDescription = document.querySelector('.temperature-description');
   let temperatureDegree = document.querySelector('.temperature-degree');
   let locationTimezone = document.querySelector('.location-timezone');
@@ -19,7 +18,7 @@ window.addEventListener('load', () => {
         long = position.coords.longitude;
         lat = position.coords.latitude;
         fetch(
-          `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=d97ccee936a02298064e1d8ae3bd38f8`,
+          `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=d97ccee936a02298064e1d8ae3bd38f8&units=metric`,
           {
             method: 'GET',
           },
@@ -33,7 +32,7 @@ window.addEventListener('load', () => {
             //Set DOM Elements from the API
             temperatureDegree.textContent = json.main.feels_like;
             temperatureDescription.textContent = main;
-            locationTimezone.textContent = json.timezone;
+            locationTimezone.textContent = json.name;
             //Set icon
             weatherIcon.innerHTML = setIcons(icon);      
           });
