@@ -3,7 +3,6 @@
  * Function to complete a GET request from the Open Weather API based on the user's location
  * to then return related Weather information.
  */
-
 window.addEventListener('load', () => {
   let long;
   let lat;
